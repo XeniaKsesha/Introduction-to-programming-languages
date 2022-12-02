@@ -8,3 +8,8 @@ if (a > b)
     Console.WriteLine($"max = " + a);
 else
     Console.WriteLine($"max = " + b);
+
+if (a < b)
+    Console.WriteLine($"min = " + a);
+else
+    Console.WriteLine($"min = " + b);
