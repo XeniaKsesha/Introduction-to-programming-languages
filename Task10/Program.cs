@@ -1,7 +1,11 @@
-﻿Console.Clear();
+﻿int SecondNumber(int num)
+{
+int seconNum = num / 10 % 10;
+return seconNum;
+}
 
-Console.Write("Введите трёхзначное число: ");
-int n = Convert.ToInt32(Console.ReadLine());
-int n1 = n / 10;
-int n2 = n1 % 10;
-Console.WriteLine(n2);
+int randomNum = new Random().Next(100, 1000);
+Console. WriteLine($"Число на вход: {randomNum}");
+
+int newNum = SecondNumber(randomNum);
+Console. WriteLine($"Новое число: {newNum}");
